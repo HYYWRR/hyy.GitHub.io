@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)file:///D:/hyy/%E4%BB%A3%E7%A0%81%E9%9B%A8.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>小何同学吖</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0
+        }
+
+
+
+
+        h1 {
+            position: absolute;
+            vertical-align: middle;
+            left: 0;
+
+            width: 1488px;
+            height: 600px;
+
+            z-index: 1;
+            text-align: center;
+            color: skyblue;
+            margin-top: 10%;
+
+
+        }
+
+        .h1 {
+            font-size: 24px;
+            line-height: 100%;
+            font-family: 'Times New Roman', Times, serif;
+
+
+        }
+
+        .hyy {
+            color: rgba(52, 58, 63, 1);
+            font-family: PingFang SC;
+            font-weight: 100%;
+            font-size: 20px;
+            text-align: center;
+            /*水平居中 */
+            line-height: 90px;
+            /*垂直居中 */
+        }
+
+        button {
+            width: 140px;
+            height: 60px;
+            color: #fff;
+            text-align: center;
+            background-color: rgb(105, 185, 229);
+            color: #fff;
+            line-height: 28px;
+            border-radius: 15px;
+            border: 0;
+            outline: 0;
+            transition: background 0.3s
+        }
+
+        button:hover {
+            background: #666
+        }
+    </style>
+</head>
+
+<body style="
+    width: 1488px;
+    height: 760px;
+">
+    <div class="hyy">
+        <h1 id="h1" style="color: rgb(91, 187, 216);">
+
+
+            <br>
+
+            </h1><h1>世 界 是 勇 敢 者 的 游 戏<br>要 有 翻 篇 的 能 力<br>
+
+                <a href="index.html"><button class="gradient-button"><br>
+                        点击进入
+            </button></a></h1>
+
+    </div>
+    <canvas id="canvas" style="background:#111" width="1488" height="1488"></canvas>
+    <script type="text/javascript">
+
+        window.onload = function () {
+            //获取画布对象
+            var canvas = document.getElementById("canvas");
+            //获取画布的上下文
+            var context = canvas.getContext("2d");
+            //获取浏览器屏幕的宽度和高度
+            var W = window.innerWidth;
+            var H = window.innerHeight;
+            //设置canvas的宽度和高度
+            canvas.width = W;
+            canvas.height = H;
+            //每个文字的字体大小
+            var fontSize = 16;
+            //计算列
+            var colunms = Math.floor(W / fontSize);
+            //记录每列文字的y轴坐标
+            var drops = [];
+            //给每一个文字初始化一个起始点的位置
+            for (var i = 0; i < colunms; i++) {
+                drops.push(0);
+            }
+
+            //运动的文字
+            var str = "小 何 同 学 吖";
+            //4:fillText(str,x,y);原理就是去更改y的坐标位置
+            //绘画的函数
+            function draw() {
+                context.fillStyle = "rgba(0,0,0,0.05)";
+                context.fillRect(0, 0, W, H);
+                //给字体设置样式
+                context.font = "700 " + fontSize + "px  微软雅黑";
+                //给字体添加颜色
+                context.fillStyle = "#00cc33";//可以rgb,hsl, 标准色，十六进制颜色
+                //写入画布中
+                for (var i = 0; i < colunms; i++) {
+                    var index = Math.floor(Math.random() * str.length);
+                    var x = i * fontSize;
+                    var y = drops[i] * fontSize;
+                    context.fillText(str[index], x, y);
+                    //如果要改变时间，肯定就是改变每次他的起点
+                    if (y >= canvas.height && Math.random() > 0.99) {
+                        drops[i] = 0;
+                    }
+                    drops[i]++;
+                }
+            }
+
+            function randColor() {
+                var r = Math.floor(Math.random() * 256);
+                var g = Math.floor(Math.random() * 256);
+                var b = Math.floor(Math.random() * 256);
+                return "rgb(" + r + "," + g + "," + b + ")";
+            }
+
+            draw();
+            setInterval(draw, 30);
+        };
+
+    </script>
+
+
+
+</body></html>
