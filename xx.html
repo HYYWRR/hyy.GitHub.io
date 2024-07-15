@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)file:///D:/hyy/xx.html -->
+<html lang="zh">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>学习</title>
+    <style>
+        body {
+            color: #6495ED;
+            height: auto;
+            background: linear-gradient(#ADD8E6, #FFFFFF);
+            font-family: Arial, sans-serif;
+        }
+
+        .content {
+            padding-top: 60px;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .menu-icon.hide {
+            display: none;
+        }
+
+        .menu-icon.show {
+            display: block;
+        }
+
+        .container {
+            display: grid;
+            place-items: center;
+            grid-gap: 1px;
+        }
+
+        .card {
+            background: linear-gradient(#ADD8E6, #FFFFFF);
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            display: flex;
+            margin-top: auto;
+            flex-direction: column;
+            color: #6495ED;
+            justify-content: center;
+            align-items: center;
+            width: 95%;
+            max-width: 2500px;
+        }
+
+        .avatar {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+
+        .name {
+            font-size: 28px;
+            color: #6495ED;
+            font-weight: bold;
+            margin-top: 1px;
+        }
+
+  
+
+        .icp>a {
+            color: gray;
+            text-decoration: none;
+        }
+
+        .icp>a:hover {
+            color: aqua;
+            text-decoration: none;
+        }
+
+        .quote {
+            font-size: 18px;
+            color: #6495ED;
+            margin-top: 1px;
+            margin-bottom: 0px;
+            white-space: nowrap;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .quote::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-image: linear-gradient(to right, #84afff, #d6c4fc);
+            animation: typing 3s steps(30, end);
+        }
+
+        @keyframes typing {
+            0% {
+                width: 0;
+            }
+
+            100% {
+                width: 100%;
+            }
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .time {
+            font-size: 40px;
+            color: #FFFFFF;
+            text-align: center;
+            margin-top: 0px;
+            margin-bottom: 3px;
+        }
+
+        .buttons-container {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 5px;
+            margin-bottom: 18px;
+            justify-content: center;
+        }
+
+        .gradient-button {
+            background: linear-gradient(#6ed0d0, #FFFFFF);
+            color: #6e99f0;
+            margin: 6px 3px;
+            border-radius: 20px;
+
+            border: none;
+            width: 140px;
+            height: 40px;
+            outline: none;
+        }
+
+        .contact-items {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contact-items img {
+            margin-left: 100px;
+        }
+
+        svg {
+            margin: 10px;
+            margin-bottom: 0px;
+        }
+
+        /* 响应式布局 */
+
+        @media only screen and (max-width: 600px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .card {
+                width: 80%;
+                max-width: none;
+            }
+
+            .contact-items {
+                flex-direction: column;
+            }
+
+            .contact-items img {
+                margin-left: 0;
+            }
+
+            svg {
+                margin: 10px;
+            }
+        }
+
+        @media only screen and (max-width: 900px) {
+            .gradient-button {
+                width: 110px;
+                height: 40px;
+            }
+        }
+
+        @media only screen and (min-width: 900px) {
+            .gradient-button {
+                width: 120px;
+                height: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h2 style="text-align:center;">小何的学习</h2>
+    <div class="container">
+        <div class="card">
+
+            <p class="quote">自能生羽翼何必仰云梯</p>
+
+            <div class="buttons-container" style="
+    width: auto;
+    height: auto;
+">
+
+
+
+
+            </div>
+
+
+            <div class="card">
+                <a href="https://www.runoob.com/"> <button class="gradient-button">菜鸟教程</button></a>
+            </div>
+
+            <div class="card">
+                <a href="https://www.bookstack.cn/"> <button class="gradient-button">书栈</button></a>
+            </div>
+            <div class="card">
+                <a href="https://www.jyshare.com/front-end/61/"> <button class="gradient-button">在线工具</button></a>
+            </div>
+            <div class="card">
+                <a href="https://how2j.cn/stage/12.html"> <button class="gradient-button">java全栈</button></a>
+            </div>
+            <div class="card">
+                <a href="https://cook.yunyoujun.cn/"> <button class="gradient-button">做菜</button></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="icp">
+
+        <a href="https://hyywrr.gitee.io/little-confused-immortal/w/html/index.html"> <button class="gradient-button">主页</button></a>
+        <a href="https://hyywrr.gitee.io/little-confused-immortal/w/html/xx.html"> <button
+            class="gradient-button">学习</button></a>
+        <a href="https://hyywrr.gitee.io/little-confused-immortal/w/html/wz.html"> <button
+                class="gradient-button">文章</button></a>
+        <a href="https://hyywrr.gitee.io/little-confused-immortal/w/html/zp.html"> <button
+                class="gradient-button">作品</button></a>
+        
+        <a href="https://hyywrr.gitee.io/little-confused-immortal/w/html/dt.html"> <button
+                class="gradient-button">动态</button></a>
+                <img src="http://hyywrr.gitee.io/little-confused-immortal/图片/海绵宝宝.jpg" alt="" class="avatar" style="height: 30px; width: 30px;" >
+                <img src="http://hyywrr.gitee.io/little-confused-immortal/图片/害羞.jpg" alt="" class="avatar" style="height: 30px; width: 30px;" >
+                <img src="http://hyywrr.gitee.io/little-confused-immortal/图片/V脸.jpg" alt="" class="avatar" style="height: 30px; width: 30px;" >
+                
+
+    </div>
+
+
+     <embed src="https://hyywrr.gitee.io/little-confused-immortal/%E9%9F%B3%E4%B9%90/music.mp3" hidden="true" autostart="true" loop="true">
+
+    <script>
+        function updateTime() {
+            const now = new Date();
+            const hours = now.getHours();
+            const minutes = now.getMinutes();
+            const seconds = now.getSeconds();
+
+            const timeElement = document.getElementById('time');
+            timeElement.innerHTML = `${hours}:${minutes}:${seconds}`;
+        }
+
+        updateTime();
+        setInterval(updateTime, 1000)
+
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', 'quotes.txt', true);
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                var quotes = xhr.responseText.split('\n');
+                var randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+                document.getElementById('quote').innerHTML = randomQuote;
+            }
+        };
+        xhr.send();
+
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>
