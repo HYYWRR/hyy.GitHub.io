@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>小何同学吖</title>
+    <meta name="keywords">
+    <meta name="description" >
+    <meta name="author" >
+    <link rel="shortcut icon" href="https://www.xfabe.com/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/Swiper/8.3.0/swiper-bundle.min.css">
+    <!-- <link rel="stylesheet" href="./static/swiper/swiper-bundle.min.css"> -->
+    <link rel="stylesheet" href="./static/css/normalize.css">
+    <!-- 点开下面两个css，都是第四行代码替换背景 -->
+    <link rel="stylesheet" href="./static/css/style.pc.css" media="screen and (min-width: 992px)"> <!-- PC端 -->
+    <link rel="stylesheet" href="./static/css/style.phone.css" media="screen and (max-width: 992px)"> <!-- 移动端 -->
+
+    
+    <!-- 静态资源托管 -->
+    <script src="https://npm.elemecdn.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdn.staticfile.org/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body onmousedown="getClick(event)">
+    <div class="xf_load">
+        <span>不要着急...</span>
+    </div>
+    <section class="big_box">
+        <header class="xf_hd_box">
+            <!-- 标题 -->
+            <h1>动态网页</h1>
+            <!-- 标题阴影（两个要改一样的） -->
+            <h2 class="xf_glass">动态网页</h2>
+    
+        </header>
+        <div class="main_content">
+            <div class="xf_left_box slidebox" >
+                <div class="xf_leftbox_top xf_glass">
+                
+                    <div class="xf_weather xf_glass">
+                        <a href="https://hyywrr.cn/%E7%83%9F%E8%8A%B1/%E7%83%9F%E8%8A%B1.html" ><div id="he-plugin-standard" > <h2>烟花</h2></div></a>
+                    
+                    </div>
+                    <div class="xf_weather xf_glass">
+                        <a href="https://hyywrr.cn/w/html/%E7%88%B1%E5%BF%83.html" ><div id="he-plugin-standard" > <h2>爱心</h2></div></a>
+                    
+                    </div>
+                    <div class="xf_weather xf_glass">
+                        
+                        <a href="https://hyywrr.cn/w/html/%E7%83%9F%E8%8A%B1.html" ><div id="he-plugin-standard" > <h2>烟花粒子</h2></div></a>
+                    </div>
+                
+                </div> 
+                <div class="xf_ico_banner">
+                    <div class="swiper-wrapper">
+                    
+                    
+                    </div>
+                    <div class="swiper-button-next swiper-button-next-ico"></div>
+                
+                </div>
+            </div>
+            
+    <div id="myModal" class="modal">
+        <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+    <div class="xf-swiper-pagination"></div>
+    <footer class="xf_footer xf_glass">
+        <p> &copy; 2024 <a href="JavaScript:;" rel="noopener noreferrer">hyywrr.cn</a> 版权所有 已安全运行<span class="xf-days"></span></p>
+        <!-- 如果没有备案号就把下面两个p标签注释 -->
+        <p><img src="./static/images/icp.png" alt="icp备案"><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">皖ICP备2024041430号</a></p>
+
+    </footer>
+    <script src="https://cdn.staticfile.org/Swiper/8.3.0/swiper-bundle.min.js"></script>
+    <!-- <script src="./static/swiper/swiper-bundle.min.js"></script> -->
+    <script src="./static/js/flexible.js"></script>
+    <script src="./static/js/fireworks.js"></script>
+    <script src="./static/js/index.js"></script>
+    <script src="https://widget.qweather.net/standard/static/js/he-standard-common.js?v=2.0"></script>
+    <script>
+        // 这里修改网站运行时间
+        var xf_footer_time1=new Date('2024-07-15').getTime()
+        var xf_footer_time2=new Date().getTime()
+        var days=xf_footer_time2-xf_footer_time1
+        var number_of_days=parseInt(days/(1000*60*60*24))
+        $(".xf-days")[0].innerHTML=number_of_days+'天'
+    </script>
+</body>
+
+</html>
