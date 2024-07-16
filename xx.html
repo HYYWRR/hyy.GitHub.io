@@ -1,44 +1,13 @@
+
 <!DOCTYPE html>
-<!-- saved from url=(0022)file:///D:/hyy/xx.html -->
-<html lang="zh">
+<html lang="zh-CN">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-    <title>学习</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>小何同学吖</title>
     <style>
-        body {
-            color: #6495ED;
-            height: auto;
-            background: linear-gradient(#ADD8E6, #FFFFFF);
-            font-family: Arial, sans-serif;
-        }
-
-        .content {
-            padding-top: 60px;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .menu-icon.hide {
-            display: none;
-        }
-
-        .menu-icon.show {
-            display: block;
-        }
-
-        .container {
-            display: grid;
-            place-items: center;
-            grid-gap: 1px;
-        }
-
         .card {
             background: linear-gradient(#ADD8E6, #FFFFFF);
             border-radius: 5px;
@@ -54,82 +23,6 @@
             max-width: 2500px;
         }
 
-        .avatar {
-            border-radius: 50%;
-            width: 100px;
-            height: 100px;
-        }
-
-        .name {
-            font-size: 28px;
-            color: #6495ED;
-            font-weight: bold;
-            margin-top: 1px;
-        }
-
-  
-
-        .icp>a {
-            color: gray;
-            text-decoration: none;
-        }
-
-        .icp>a:hover {
-            color: aqua;
-            text-decoration: none;
-        }
-
-        .quote {
-            font-size: 18px;
-            color: #6495ED;
-            margin-top: 1px;
-            margin-bottom: 0px;
-            white-space: nowrap;
-            overflow: hidden;
-            position: relative;
-        }
-
-        .quote::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 2px;
-            background-image: linear-gradient(to right, #84afff, #d6c4fc);
-            animation: typing 3s steps(30, end);
-        }
-
-        @keyframes typing {
-            0% {
-                width: 0;
-            }
-
-            100% {
-                width: 100%;
-            }
-        }
-
-        h1 {
-            text-align: center;
-        }
-
-        .time {
-            font-size: 40px;
-            color: #FFFFFF;
-            text-align: center;
-            margin-top: 0px;
-            margin-bottom: 3px;
-        }
-
-        .buttons-container {
-            display: flex;
-            flex-wrap: wrap;
-            margin-top: 5px;
-            margin-bottom: 18px;
-            justify-content: center;
-        }
-
         .gradient-button {
             background: linear-gradient(#6ed0d0, #FFFFFF);
             color: #6e99f0;
@@ -141,154 +34,95 @@
             height: 40px;
             outline: none;
         }
-
-        .contact-items {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .contact-items img {
-            margin-left: 100px;
-        }
-
-        svg {
-            margin: 10px;
-            margin-bottom: 0px;
-        }
-
-        /* 响应式布局 */
-
-        @media only screen and (max-width: 600px) {
-            .container {
-                flex-direction: column;
-            }
-
-            .card {
-                width: 80%;
-                max-width: none;
-            }
-
-            .contact-items {
-                flex-direction: column;
-            }
-
-            .contact-items img {
-                margin-left: 0;
-            }
-
-            svg {
-                margin: 10px;
-            }
-        }
-
-        @media only screen and (max-width: 900px) {
-            .gradient-button {
-                width: 110px;
-                height: 40px;
-            }
-        }
-
-        @media only screen and (min-width: 900px) {
-            .gradient-button {
-                width: 120px;
-                height: 40px;
-            }
-        }
     </style>
+    <meta name="keywords">
+    <meta name="description" >
+    <meta name="author" >
+    <link rel="shortcut icon" href="https://www.xfabe.com/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/Swiper/8.3.0/swiper-bundle.min.css">
+    <!-- <link rel="stylesheet" href="./static/swiper/swiper-bundle.min.css"> -->
+    <link rel="stylesheet" href="./static/css/normalize.css">
+    <!-- 点开下面两个css，都是第四行代码替换背景 -->
+    <link rel="stylesheet" href="./static/css/style.pc.css" media="screen and (min-width: 992px)"> <!-- PC端 -->
+    <link rel="stylesheet" href="./static/css/style.phone.css" media="screen and (max-width: 992px)"> <!-- 移动端 -->
+
+    
+    <!-- 静态资源托管 -->
+    <script src="https://npm.elemecdn.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdn.staticfile.org/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
-<body>
-    <h2 style="text-align:center;">小何的学习</h2>
-    <div class="container">
-        <div class="card">
-
-            <p class="quote">自能生羽翼何必仰云梯</p>
-
-            <div class="buttons-container" style="
-    width: auto;
-    height: auto;
-">
-
-
-
-
-            </div>
-
-
-            <div class="card">
-                <a href="https://www.runoob.com/"> <button class="gradient-button">菜鸟教程</button></a>
-            </div>
-
-            <div class="card">
-                <a href="https://www.bookstack.cn/"> <button class="gradient-button">书栈</button></a>
-            </div>
-            <div class="card">
-                <a href="https://www.jyshare.com/front-end/61/"> <button class="gradient-button">在线工具</button></a>
-            </div>
-            <div class="card">
-                <a href="https://how2j.cn/stage/12.html"> <button class="gradient-button">java全栈</button></a>
-            </div>
-            <div class="card">
-                <a href="https://cook.yunyoujun.cn/"> <button class="gradient-button">做菜</button></a>
-            </div>
-        </div>
+<body onmousedown="getClick(event)">
+    <div class="xf_load">
+        <span><h6>多学一分钟，顶峰挑老公...</h6></span>
     </div>
-
-    <div class="icp">
-
-        <a href="https://hyywrr.gitee.io/little-confused-immortal/w/html/index.html"> <button class="gradient-button">主页</button></a>
-        <a href="https://hyywrr.gitee.io/little-confused-immortal/w/html/xx.html"> <button
-            class="gradient-button">学习</button></a>
-        <a href="https://hyywrr.gitee.io/little-confused-immortal/w/html/wz.html"> <button
-                class="gradient-button">文章</button></a>
-        <a href="https://hyywrr.gitee.io/little-confused-immortal/w/html/zp.html"> <button
-                class="gradient-button">作品</button></a>
-        
-        <a href="https://hyywrr.gitee.io/little-confused-immortal/w/html/dt.html"> <button
-                class="gradient-button">动态</button></a>
-                <img src="http://hyywrr.gitee.io/little-confused-immortal/图片/海绵宝宝.jpg" alt="" class="avatar" style="height: 30px; width: 30px;" >
-                <img src="http://hyywrr.gitee.io/little-confused-immortal/图片/害羞.jpg" alt="" class="avatar" style="height: 30px; width: 30px;" >
-                <img src="http://hyywrr.gitee.io/little-confused-immortal/图片/V脸.jpg" alt="" class="avatar" style="height: 30px; width: 30px;" >
+    <section class="big_box">
+        <header class="xf_hd_box">
+            <!-- 标题 -->
+            <h1>欢迎学习</h1>
+            <!-- 标题阴影（两个要改一样的） -->
+            <h2 class="xf_glass">欢迎学习</h2>
+    
+        </header>
+        <div class="main_content">
+            <div class="xf_left_box slidebox" >
+                <div class="xf_leftbox_top xf_glass">
                 
-
+                    <div class="card">
+                        <a href="https://www.runoob.com/"> <button class="gradient-button">菜鸟教程</button></a>
+                    </div>
+        
+                    <div class="card">
+                        <a href="https://www.bookstack.cn/"> <button class="gradient-button">书栈</button></a>
+                    </div>
+                    <div class="card">
+                        <a href="https://www.jyshare.com/front-end/61/"> <button class="gradient-button">在线工具</button></a>
+                    </div>
+                    <div class="card">
+                        <a href="https://how2j.cn/stage/12.html"> <button class="gradient-button">java全栈</button></a>
+                    </div>
+                    <div class="card">
+                        <a href="https://cook.yunyoujun.cn/"> <button class="gradient-button">做菜</button></a>
+                    </div>
+                </div>
+            </div>
+        
+                <div class="xf_ico_banner">
+                    <div class="swiper-wrapper">
+                    
+                    
+                    </div>
+                    <div class="swiper-button-next swiper-button-next-ico"></div>
+                
+                </div>
+            </div>
+            
+    <div id="myModal" class="modal">
+        <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
     </div>
+    <div class="xf-swiper-pagination"></div>
+    <footer class="xf_footer xf_glass">
+        <p> &copy; 2024 <a href="JavaScript:;" rel="noopener noreferrer">hyywrr.cn</a> 版权所有 已安全运行<span class="xf-days"></span></p>
+        <!-- 如果没有备案号就把下面两个p标签注释 -->
+        <p><img src="./static/images/icp.png" alt="icp备案"><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">皖ICP备2024041430号</a></p>
 
-
-     <embed src="https://hyywrr.gitee.io/little-confused-immortal/%E9%9F%B3%E4%B9%90/music.mp3" hidden="true" autostart="true" loop="true">
-
+    </footer>
+    <script src="https://cdn.staticfile.org/Swiper/8.3.0/swiper-bundle.min.js"></script>
+    <!-- <script src="./static/swiper/swiper-bundle.min.js"></script> -->
+    <script src="./static/js/flexible.js"></script>
+    <script src="./static/js/fireworks.js"></script>
+    <script src="./static/js/index.js"></script>
+    <script src="https://widget.qweather.net/standard/static/js/he-standard-common.js?v=2.0"></script>
     <script>
-        function updateTime() {
-            const now = new Date();
-            const hours = now.getHours();
-            const minutes = now.getMinutes();
-            const seconds = now.getSeconds();
-
-            const timeElement = document.getElementById('time');
-            timeElement.innerHTML = `${hours}:${minutes}:${seconds}`;
-        }
-
-        updateTime();
-        setInterval(updateTime, 1000)
-
-        var xhr = new XMLHttpRequest();
-        xhr.open('GET', 'quotes.txt', true);
-        xhr.onreadystatechange = function () {
-            if (xhr.readyState === 4 && xhr.status === 200) {
-                var quotes = xhr.responseText.split('\n');
-                var randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
-                document.getElementById('quote').innerHTML = randomQuote;
-            }
-        };
-        xhr.send();
-
-
-
-
+        // 这里修改网站运行时间
+        var xf_footer_time1=new Date('2024-07-15').getTime()
+        var xf_footer_time2=new Date().getTime()
+        var days=xf_footer_time2-xf_footer_time1
+        var number_of_days=parseInt(days/(1000*60*60*24))
+        $(".xf-days")[0].innerHTML=number_of_days+'天'
     </script>
-
-
-
 </body>
 
 </html>
